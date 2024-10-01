@@ -1,1 +1,1 @@
-web: gunicorn django-regex.wsgi
+web: gunicorn djangoregex.wsgi
