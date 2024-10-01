@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # Uncomment this if you wish to use the Django admin feature:
+    # path('admin/', admin.site.urls),
     path("", include("re_app.urls")),
     path("regex/", include("regex_app.urls")),
 ]
