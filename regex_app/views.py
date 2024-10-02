@@ -15,7 +15,8 @@ def regex_get(request):
     with open("static/maps/regex.json", "r") as f:
         reference = json.load(f)
 
-    return render(request, "regex.html", {
+    return render(request, "base.html", {
         "reference": reference,
         "post_url": "/regex/test-regex/",
+        "info_url": "pypi.org/project/regex/"
     })

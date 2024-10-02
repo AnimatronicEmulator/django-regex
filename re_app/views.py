@@ -15,7 +15,8 @@ def re_get(request):
     with open("static/maps/re.json", "r") as f:
         reference = json.load(f)
         
-    return render(request, "re.html", {
+    return render(request, "base.html", {
         "reference": reference, 
         "post_url": "/test-re/",
+        "info_url": "docs.python.org/3/library/re.html"
     })
